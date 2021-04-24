@@ -30,10 +30,6 @@ body {
     text-align: center;
 }
 
-.navbar .nav-item span {
-    margin: 2px;
-}
-
 .navbar li>a {
     font-size: 15px!important;
     font-family: 'poppins';
@@ -55,7 +51,7 @@ body {
 }
 
 .navbar .collapse {
-    margin-left: 60%;
+    margin-left: 50%;
 }
 
 button span i {
