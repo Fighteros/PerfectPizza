@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assest/vendor/icofont/icofont.min.css">
     <link rel="stylesheet" href="assest/vendor/fontawesome/css/all.css">
     <link rel="stylesheet" href="assest/vendor/boxicons-2.0.7/boxicons-2.0.7/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
     <!-- main css -->
     <link rel="stylesheet" href="assest/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,52 +24,49 @@
 </head>
 
 <body>
-    <!-- navbar -->
-    <nav id="navbar" class="navbar navbar-expand-sm navbar-light wow animate__animated animate__bounceInDown fixed-top" data-wow-duration="1s">
-        <div class="container">
-            <a class="navbar-brand logo" href="/"><i class="fas fa-pizza-slice"></i><span class="navbar-brand"> Perfect Pizza </span></a>
-            <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <header id="header" class="header">
+        <!-- navbar -->
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-light wow animate__animated animate__bounceInDown fixed-top bg-primary" role="navigation" data-wow-duration="1s">
+            <div class="container">
+                <a class="navbar-brand logo" href="/"><i class="fas fa-pizza-slice"></i><span class="navbar-brand"> Perfect Pizza </span></a>
+                <button class="navbar-toggler d-xl-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i id="navicon" class="icofont-navigation-menu icofont-close"></i></span>
                 </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#top"><i class="bx bx-home"></i><spane> Home</spane></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#menu"><i class="bx bx-menu"></i><spane> Menu</spane></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#about"><i class="bx bx-store"></i><spane> About</spane></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#contact"><i class="bx bx-phone"></i><spane> Contact us</spane></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- end -->
-
-    <!-- main -->
-    <main id="main" class="main">
-        <!-- section one -->
-        <section id="one">
-            <div class="container">
-                <div class="row">
-                    <div class="">
-
-                    </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#top"><i class="bx bx-home"></i><spane> Home</spane></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#menu"><i class="bx bx-menu"></i><spane> Menu</spane></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#about"><i class="bx bx-store"></i><spane> About</spane></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#contact"><i class="bx bx-phone"></i><spane> Contact us</spane></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </header>
+    <!-- end -->
+
+    <!-- section one -->
+    <main id="main">
+        <section id="one" class="one d-flex flex-column justify-content-center align-items-center wow animate__animated animate__bounceInUp">
+            <div class="top-container" data-aos="fade-in">
+                <h3>Perfect</h3>
+                <h1>Pizza</h1>
+                <h2>The Secert To The Perfect Pizza taste </h2>
+                <hr>
+                <p><span class="typed" data-typed-items="Italian sausage, pizza dough, pesto, feta cheese, bell peppers"></span></p>
+            </div>
         </section>
-        <!-- end -->
     </main>
-    <!-- end main -->
+    <!-- end -->
 
-    <!-- footer -->
-
-    <!-- end footer -->
     <!-- JS vendor -->
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -80,11 +78,12 @@
     <script>
         AOS.init();
     </script>
-    <!-- <script src="assest/vendor/typed.js-master/src/typed.js"></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
     <script>
         new WOW().init();
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+    <script src="/assest/vendor/typed.js-master/typed.min.js"></script>
 
     <!-- JS main -->
     <script src="assest/JS/solid.js"></script>

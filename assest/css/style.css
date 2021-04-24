@@ -7,14 +7,23 @@
 
 body {
     line-height: 1.6;
+    background: #f4f4f4;
+}
+
+
+/* header */
+
+.header {
+    padding: 10px;
 }
 
 
 /* navbar */
 
 .navbar {
-    background: #f3f4ed!important;
+    background: #fff5c0!important;
     text-align: center;
+    padding: 10px;
 }
 
 .navbar-light .navbar-toggler {
@@ -62,4 +71,46 @@ button span i {
     .navbar .collapse {
         margin-left: 0;
     }
+}
+
+
+/* one */
+
+#main #one {
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    padding-top: 10px;
+    background: #f4f4f4;
+    background-size: cover;
+}
+
+#main #one .top-containe {
+    position: relative;
+    z-index: 2;
+    min-width: 300px;
+}
+
+#main #one h1 {
+    margin: 0 0 10px 0;
+    font-size: 55px;
+    font-weight: 500;
+    line-height: 56px;
+    color: #000;
+}
+
+#main #one p {
+    color: #03506f;
+    margin-bottom: 50px;
+    font-size: 22px;
+    text-align: left;
+    padding-left: 7px;
+}
+
+#main #one p span {
+    color: #03506f;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    line-height: 2px;
+    border-bottom: 3px solid #37b3ed;
 }
