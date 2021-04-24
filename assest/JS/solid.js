@@ -20,7 +20,6 @@
 
     $(navBtn).on('click', function(e) {
         if (!($(navMobile).hasClass('collapsed'))) {
-            console.log("uncollapsed");
             $(iIcon).toggleClass('icofont-navigation-menu');
         }
     });
