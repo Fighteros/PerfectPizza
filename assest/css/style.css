@@ -1,0 +1,49 @@
+:root {
+    --paragraphs: #222222;
+    --links: #666666;
+    --overlay: rgba(0, 0, 0, 0.7);
+    --buttons: #325288;
+}
+
+
+/* resets */
+
+body {
+    line-height: 1.6;
+}
+
+
+/* navbar */
+
+.navbar {
+    background-color: #f3f4ed!important;
+    text-align: center;
+}
+
+.logo {
+    color: #325288!important;
+    text-decoration: none;
+    font-size: 1.9em!important;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar li>a {
+    font-size: 15px!important;
+    font-family: 'poppins';
+    font-weight: 700;
+}
+
+.navbar li a:hover {
+    color: #325288 !important;
+}
+
+.nav-colored {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
+
+.nav-transparent {
+    border-bottom: none;
+}
