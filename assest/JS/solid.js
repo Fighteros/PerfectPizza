@@ -19,7 +19,7 @@
         var scrollTop = $(window).scrollTop();
         if (scrollTop > $('#header').offset().top) {
             $(navbar).addClass('nav-colored');
-            $(navbar).reomveClass('nav-transparent')
+            $(navbar).removeClass('nav-transparent')
         } else {
             $(navbar).removeClass('nav-colored');
             $(navbar).addClass('nav-transparent')
@@ -35,6 +35,15 @@
         if (!($(navMobile).hasClass('collapsed'))) {
             $(iIcon).toggleClass('icofont-navigation-menu');
         }
+    });
+
+    // menu button
+
+    var menuBtn = document.getElementById('menu-btn');
+    var menuSec = document.getElementById('menu');
+    $(menuBtn).on('click', function(e) {
+        $(menuSec).get(0).scrollIntoView();
+        console.log('event happend')
     });
 
 

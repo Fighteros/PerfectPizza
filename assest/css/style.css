@@ -217,3 +217,61 @@ button span i {
         width: 120px;
     }
 }
+
+
+/* about  */
+
+.about {
+    font-size: 14px;
+    overflow-x: hidden;
+    background: #e4e3e3;
+}
+
+.about h3 {
+    padding: 22px 0;
+    font-weight: 700;
+    color: var(--buttons);
+    font-size: 34px;
+}
+
+.about .right-col {
+    background: #000;
+}
+
+.about img {
+    background-repeat: no-repeat;
+    width: 99%;
+    height: 100%;
+    background-size: cover;
+}
+
+.about .left-col {
+    padding-bottom: 155px;
+    padding-top: 155px;
+    margin-top: 25px;
+    margin-left: 5px;
+}
+
+.about .left-col .about-title {
+    margin-left: 35px;
+    text-align: center;
+    /* width: 300px; */
+    font-size: 44px;
+    color: #ff5f40;
+    font-family: 'Original Surfer', cursive;
+    font-weight: 700;
+    border-bottom: 5px solid #325288b7;
+    border-radius: 1.8rem;
+}
+
+.about .left-col .about-txt {
+    padding-left: 50px;
+    width: 300%;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.about .left-col .btn {
+    margin-left: 112px;
+    width: 60%;
+}
