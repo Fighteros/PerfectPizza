@@ -76,41 +76,32 @@ button span i {
 
 /* one */
 
-#main #one {
+.one {
+    position: relative;
+    height: 500px;
+    background: url('../images/index.jpg') no-repeat bottom center/cover;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    margin-top: 6%;
-    padding-top: 10px;
-    background: #f4f4f4;
-    background-size: cover;
+    background: rgba(0, 4, 8, 0.418);
+    color: #fff;
 }
 
-#main #one .top-containe {
-    position: relative;
-    z-index: 2;
-    min-width: 300px;
-}
-
-#main #one h1 {
-    margin: 0 0 10px 0;
-    font-size: 55px;
-    font-weight: 500;
-    line-height: 56px;
-    color: #000;
-}
-
-#main #one p {
-    color: #03506f;
-    margin-bottom: 50px;
-    font-size: 22px;
-    text-align: left;
-    padding-left: 7px;
-}
-
-#main #one p span {
-    color: #03506f;
-    padding-bottom: 5px;
-    letter-spacing: 1px;
-    line-height: 2px;
-    border-bottom: 3px solid #37b3ed;
+.one-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 860px;
+    font-size: 1.2em;
+    color: #fff!important;
+    padding: 10rem 0 0rem;
 }
