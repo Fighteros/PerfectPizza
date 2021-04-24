@@ -275,3 +275,25 @@ button span i {
     margin-left: 112px;
     width: 60%;
 }
+
+@media (max-width: 812px) {
+    .about .left-col .about-title {
+        margin-left: 15px;
+        width: 200px;
+        text-align: center;
+        /* width: 300px; */
+        font-size: 34px;
+        border-bottom: 4px solid #325288b7;
+    }
+    .about .left-col .about-txt {
+        width: 400px;
+        padding-bottom: 55px;
+        font-size: 15px;
+    }
+    .about .left-col .btn {
+        margin-left: 10px;
+        z-index: 2;
+        align-items: center;
+        width: 50%;
+    }
+}
