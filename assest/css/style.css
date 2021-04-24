@@ -16,7 +16,7 @@ body {
 /* navbar */
 
 .navbar {
-    background-color: #f3f4ed!important;
+    background: #f3f4ed!important;
     text-align: center;
 }
 
@@ -46,4 +46,14 @@ body {
 
 .nav-transparent {
     border-bottom: none;
+}
+
+.navbar .collapse {
+    margin-left: 60%;
+}
+
+@media (max-width: 812px) {
+    .navbar .collapse {
+        margin-left: 0;
+    }
 }
