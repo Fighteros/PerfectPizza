@@ -206,6 +206,14 @@ button span i {
     font-weight: 500;
 }
 
-.card .btn:hover {
-    border: px solid #0084ff;
+@media (max-width:728px) {
+    .card {
+        margin-left: 20%;
+        font-size: .8rem;
+        text-align: center;
+        width: 55% !important;
+    }
+    .card img {
+        width: 120px;
+    }
 }
