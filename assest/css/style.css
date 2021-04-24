@@ -30,6 +30,10 @@ body {
     text-align: center;
 }
 
+.navbar .nav-item span {
+    margin: 2px;
+}
+
 .navbar li>a {
     font-size: 15px!important;
     font-family: 'poppins';
