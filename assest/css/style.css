@@ -162,11 +162,13 @@ button span i {
 .menu {
     font-size: 14px;
     padding: 44px 0;
-    background: var(--body);
+    background: #393e46;
 }
 
 .menu h3 {
-    color: var(--buttons);
+    color: #fff;
+    letter-spacing: 2.1px;
+    font-family: cursive;
     font-size: 34px;
     font-weight: 700;
     padding-bottom: 30px;
@@ -225,6 +227,7 @@ button span i {
     font-size: 14px;
     overflow-x: hidden;
     background: #e4e3e3;
+    /* border-bottom: 3px solid #e4e3e3; */
 }
 
 .about h3 {
@@ -296,4 +299,19 @@ button span i {
         align-items: center;
         width: 50%;
     }
+}
+
+
+/* order {contact} */
+
+.order {
+    font-size: 14px;
+    overflow-x: hidden;
+    background: var(--body);
+    padding: 55px;
+}
+
+.order .right-col img {
+    width: 100%;
+    background-size: cover;
 }
