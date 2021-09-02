@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+
 const MainSection = ({ title, subtite }) => {
     return (
-        <main className="main p-5 m-5 text-align-center">
-            <div>
+        <main className="main">
+            {/* this is the landing div */}
+            <div className="main-title col-md-12 overlay">
                 <h1>
                     {title}
                 </h1>
