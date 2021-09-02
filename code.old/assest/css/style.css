@@ -315,3 +315,31 @@ button span i {
     width: 100%;
     background-size: cover;
 }
+
+.order .order-title {
+    padding-bottom: 20px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 1px;
+}
+
+
+/*  text-indent here is better thatn align center as they doesn't start at the same point */
+
+.order .form-group input {
+    border: 0px solid var(--body);
+    background-color: transparent;
+    margin-bottom: 2px;
+    border-bottom: 2px solid #dddddd;
+    text-indent: 190px;
+}
+
+.form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.order .btn {
+    margin-top: 35px;
+}
