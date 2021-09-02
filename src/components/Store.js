@@ -27,18 +27,20 @@ const Store = ({ store }) => {
     return (
         <>
             <Card
-                text="Dark"
+
+                text="white"
                 key={store.id}
-                className="storeCard bg-dark mb-2 mt-5 text-white">
-                <Card.Img className="overlay has-bg-img rounded h-10rem" variant="top" src={storeImages} alt="Card image" />
-                <Card.ImgOverlay>
-                    <Card.Title> {store.name} </Card.Title>
-                    <Card.Text variant="center">
+                className="storeCard mb-5 mt-5 card"
+            >
+                <Card.Img className="card-img overlay bg-img rounded" variant="top" src={storeImages} alt="Card image" />
+                <Card.ImgOverlay bsPrefix="overlay-div">
+                    <Card.Title className="mt-5"> <h2 className='pt-3 pb-4'>{store.name}</h2> </Card.Title>
+                    <Card.Text className="card-item" variant="center">
                         {store.address1}{' '}
                         -
                         {store.address2}{' '}
                     </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
+                    <Button variant="primary">Go Store</Button>
                 </Card.ImgOverlay>
             </Card>
         </>
