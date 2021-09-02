@@ -46,3 +46,14 @@
   background: rgba(0, 4, 8, 0.518);
   color: #fff;
 }
+
+.storeCard {
+  color: #fff;
+    width: 100%!important;
+    margin-bottom: 1em;
+    border-radius: .5rem;
+    background-color: #dddddd;
+    box-shadow: 0 0 15px rgb(0, 0, 0);
+    -webkit-transition: all .2s linear;
+    transition: all .2s linear;
+}
