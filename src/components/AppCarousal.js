@@ -25,17 +25,18 @@ const AppCarousal = () => {
     }
 
     return (
-        <section className="two" id="two">
+        <section className="two bg-white" id="two">
             <div className="carousal-div bg-dark">
                 <Carousel
+                    isRTL={true}
                     className="carousal"
                     enableAutoPlay
-                    autoPlaySpeed={2500}
+                    autoPlaySpeed={3000}
                     easing="cubic-bezier(1,.15,.55,1.54)"
                     tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
                 >
                     {foodCat.map((item, index) => {
-                        if (index > 20) {
+                        if (index > 30) {
                             return
                         }
                         return <Item> <ImageSlide key={item.idCategory} url={item.strCategoryThumb} description={item.strCategoryDescription} name={item.strCategory}></ImageSlide>                    </Item>

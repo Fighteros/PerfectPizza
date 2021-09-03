@@ -5,7 +5,10 @@ const ImageSlide = ({ url, name, description, }) => {
     const price = Math.floor(Math.random() * 100 + 1)
 
     return (
-        <img src={url} />
+        <>
+            <p>{name}</p>
+            <img src={url} />
+        </>
     )
 }
 

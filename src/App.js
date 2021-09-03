@@ -2,6 +2,7 @@ import NavBar from './components/NavBar'
 import MainSection from './components/MainSection'
 import Resturnats from './components/Resturnats';
 import AppCarousal from './components/AppCarousal';
+import ContactUs from './components/ContactUs';
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -32,12 +33,14 @@ const App = () => {
   return (
     <>
       <NavBar />
+      {/*  main section */}
       <MainSection />
-
+      {/*  section one */}
       <Resturnats resturants={resturantsUI} />
-
+      {/*  section 2 */}
       <AppCarousal />
-
+      {/*  section 3 */}
+      <ContactUs />
     </>
   )
 }
