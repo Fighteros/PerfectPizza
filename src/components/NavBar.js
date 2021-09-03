@@ -21,17 +21,17 @@ const NavBar = ({ storeName }) => {
                     </Navbar.Brand>
                     <Nav className="justfiy-content-end">
                         <Nav.Item>
-                            <Nav.Link>
+                            <Nav.Link href='/'>
                                 <FaHome className="mb-1" /> {' '} Home
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>
+                            <Nav.Link href="/#two">
                                 <FaStore className="mb-1" /> Stores
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
-                            <Nav.Link>
+                            <Nav.Link href="/#three">
                                 <FaPhoneAlt className="mb-1" />{' '}Contact Us
                             </Nav.Link>
                         </Nav.Item>

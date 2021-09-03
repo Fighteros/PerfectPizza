@@ -41,6 +41,7 @@ const App = () => {
       <AppCarousal />
       {/*  section 3 */}
       <ContactUs />
+      {/* here will be the footer */}
     </>
   )
 }
