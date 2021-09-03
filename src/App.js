@@ -1,8 +1,8 @@
 import NavBar from './components/NavBar'
 import MainSection from './components/MainSection'
 import Resturnats from './components/Resturnats';
+import AppCarousal from './components/AppCarousal';
 import { useState, useEffect } from 'react';
-
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 // https://pizzaapp.docs.apiary.io/#reference/0/restaurants/list-restaurants?console=1
@@ -30,12 +30,17 @@ const App = () => {
   }
 
 
+
+
   return (
     <>
       <NavBar />
       <MainSection />
 
       <Resturnats resturants={resturantsUI} />
+
+      <AppCarousal />
+
     </>
   )
 }

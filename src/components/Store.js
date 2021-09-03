@@ -22,7 +22,12 @@ const Store = ({ store }) => {
 
     }
 
-    // const rand = Math.flooer(Math.random() * storeImages.length)
+    // on store click getmenu fetch menu
+    const fetchStoreMenu = async (id) => {
+        const res = await fetch(`https://private-anon-e4d33198e4-pizzaapp.apiary-mock.com/restaurants/${id}/menu`)
+        const foodMenu = res.json()
+        return foodMenu
+    }
 
     return (
         <>
@@ -40,7 +45,7 @@ const Store = ({ store }) => {
                         -
                         {store.address2}{' '}
                     </Card.Text>
-                    <Button variant="primary">Go Store</Button>
+                    <Button variant="primary">Get Store Menu</Button>
                 </Card.ImgOverlay>
             </Card>
         </>

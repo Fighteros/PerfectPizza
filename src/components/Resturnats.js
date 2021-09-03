@@ -2,13 +2,14 @@ import PropTypes from 'prop-types'
 import Store from './Store'
 import { Container, Row, Col } from 'react-bootstrap'
 const Resturnats = ({ resturants }) => {
+
     return (
         <section className="one bg-dark " id="one">
             <Container>
                 <Row>
                     {resturants.map((resturant, index) => (
-                        <Col>
-                            < Store key={resturant.id} store={resturant} />
+                        <Col key={resturant.id}>
+                            <Store key={resturant.id} store={resturant} />
                         </Col>
                     ))}
                 </Row>
