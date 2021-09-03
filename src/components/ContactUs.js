@@ -8,7 +8,7 @@ const ContactUs = () => {
                     <h1>We're Here</h1>
                     <p>our door is always open for a good cup of coffee.</p>
                 </Col>
-                <Col className="contactus bg-dark text-center pt-5  contactus-two">
+                <Col className="contactus text-center pt-5  contactus-two">
                     <h1>Let's Talk</h1>
                     <p>Share your excitement with us</p>
                     <span>FineFood@dummy.email</span>

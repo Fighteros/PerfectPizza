@@ -3,6 +3,7 @@ import MainSection from './components/MainSection'
 import Resturnats from './components/Resturnats';
 import AppCarousal from './components/AppCarousal';
 import ContactUs from './components/ContactUs';
+import Footer from './components/Footer';
 import { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -42,6 +43,7 @@ const App = () => {
       {/*  section 3 */}
       <ContactUs />
       {/* here will be the footer */}
+      <Footer />
     </>
   )
 }
