@@ -29,9 +29,6 @@ const App = () => {
     return data
   }
 
-
-
-
   return (
     <>
       <NavBar />

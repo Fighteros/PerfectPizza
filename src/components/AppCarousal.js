@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import Carousel, { consts } from 'react-elastic-carousel';
 import ImageSlide from './ImageSlide';
-
+import Item from './Item'
 
 const AppCarousal = () => {
 
@@ -10,8 +10,8 @@ const AppCarousal = () => {
     useEffect(() => {
         const foodCatgories = async () => {
             const foodCatData = await getFoodCatData()
-            console.log(foodCatData.drinks)
-            setFoodCat(foodCatData.drinks)
+            console.log(foodCatData.categories)
+            setFoodCat(foodCatData.categories)
         }
         foodCatgories()
     }, [])
@@ -19,8 +19,7 @@ const AppCarousal = () => {
 
     // fetch food catagories 
     const getFoodCatData = async () => {
-        const res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=Ordinary_Drink')
-        console.log(res.drinks)
+        const res = await fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
         const data = res.json()
         return data
     }
@@ -34,19 +33,12 @@ const AppCarousal = () => {
                     autoPlaySpeed={2500}
                     easing="cubic-bezier(1,.15,.55,1.54)"
                     tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
-                    transitionMs={700}
-                    outerSpacing={0}
-                    itemPadding={[0, 0]}
-                    itemPosition={consts.CENTER}
                 >
-
                     {foodCat.map((item, index) => {
-                        if (index > 5) {
+                        if (index > 20) {
                             return
                         }
-                        return <div key={item.idDrink} >
-                            <ImageSlide url={item.strDrinkThumb} name={item.strDrink}></ImageSlide>
-                        </div>
+                        return <Item> <ImageSlide key={item.idCategory} url={item.strCategoryThumb} description={item.strCategoryDescription} name={item.strCategory}></ImageSlide>                    </Item>
                     })}
                 </Carousel>
             </div >
