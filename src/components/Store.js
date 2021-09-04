@@ -45,7 +45,9 @@ const Store = ({ store }) => {
                         -
                         {store.address2}{' '}
                     </Card.Text>
-                    <Button variant="primary">Get Store Menu</Button>
+                    <Button variant="primary" onClick={() => {
+                        console.log(fetchStoreMenu(store.id))
+                    }}>Get Store Menu</Button>
                 </Card.ImgOverlay>
             </Card>
         </>

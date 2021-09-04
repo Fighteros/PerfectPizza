@@ -1,13 +1,11 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
 
-const ImageSlide = ({ url, name, description, }) => {
-    const price = Math.floor(Math.random() * 100 + 1)
+const ImageSlide = ({ url, name }) => {
 
     return (
         <>
             <p>{name}</p>
-            <img src={url} />
+            <img src={url} alt="food element" />
         </>
     )
 }

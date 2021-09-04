@@ -1,7 +1,7 @@
 
 const Footer = () => {
     return (
-        <footer class="footer">
+        <footer className="footer">
             <p style={{ textAlign: "center" }}>Copyright &copy; 2021</p>
         </footer >
     )

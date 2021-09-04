@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import Carousel, { consts } from 'react-elastic-carousel';
+import Carousel from 'react-elastic-carousel';
 import ImageSlide from './ImageSlide';
 import Item from './Item'
 
@@ -10,8 +10,9 @@ const AppCarousal = () => {
     useEffect(() => {
         const foodCatgories = async () => {
             const foodCatData = await getFoodCatData()
-            console.log(foodCatData.categories)
-            setFoodCat(foodCatData.categories)
+            const foddCatDataCat = foodCatData.categories
+            // console.log(foodCatData.categories)
+            setFoodCat(foddCatDataCat)
         }
         foodCatgories()
     }, [])
@@ -35,12 +36,9 @@ const AppCarousal = () => {
                     easing="cubic-bezier(1,.15,.55,1.54)"
                     tiltEasing="cubic-bezier(0.110, 1, 1.000, 0.210)"
                 >
-                    {foodCat.map((item, index) => {
-                        if (index > 30) {
-                            return
-                        }
-                        return <Item> <ImageSlide key={item.idCategory} url={item.strCategoryThumb} description={item.strCategoryDescription} name={item.strCategory}></ImageSlide>                    </Item>
-                    })}
+                    {foodCat.map(item => (
+                        <Item> <ImageSlide key={item.idCategory} url={item.strCategoryThumb} d></ImageSlide></Item>
+                    ))}
                 </Carousel>
             </div >
         </section >
